@@ -1,0 +1,120 @@
+/*
+====================================
+  owl-carousel
+====================================
+*/
+
+.slider-unit {
+  position: relative;
+  margin: 0 1px;
+  overflow: hidden;
+  display: block;
+  &:after {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0,0,0,0.8) 99%, rgba(0,0,0,0.8) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 );
+  }
+  img {
+    object-fit: cover;
+    transform: scale(1.0);
+  }
+  img, .slider-unit__text {
+    transition: .3s all ease-in-out;
+  }
+  .slider-unit__text {
+    z-index: 2;
+    position: absolute;
+    bottom: -90px;
+    color: #fff;
+    display: block;
+    width: 100%;
+    .slider-unit__heading {
+      font-size: 1.3rem ;
+      position: relative;
+      font-weight: 400;
+      font-family: Montserrat,sans-serif;
+    }
+  }
+  p {
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s all ease;
+    color: rgba(255,255,255, .5);
+  }
+  &:hover {
+    p {
+      opacity: 1;
+      visibility: visible;
+    }
+    .slider-unit__text {
+      bottom: 30px;
+    }
+    img {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.owl-carousel-thumbs {
+  padding-bottom: 90px;
+
+  .owl-nav {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    button.owl-prev, button.owl-next {
+      position: relative;
+      display: inline-block;
+      padding: 20px !important;
+      font-size: 30px !important;
+      color: #000;
+      &.disabled {
+        opacity: .2;
+      }
+    }
+  }
+}
+
+.owl-carousel-feedbacks {
+  padding-top: 20px;
+
+  .owl-carousel-feedbacks__item {
+    padding: 0 2px;
+  }
+
+  .owl-carousel-feedbacks__item-title {
+    color: #fff;
+  }
+
+  .owl-carousel-feedbacks__item-caption {
+    color: #999;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .owl-carousel-feedbacks__item-text {
+    color: #fff;
+    font-size: 15px;
+  }
+
+  .owl-nav {
+    button.owl-prev, button.owl-next {
+      position: relative;
+      display: inline-block;
+      padding: 4px!important;
+      font-size: 24px!important;
+      color: #c75;
+      &.disabled {
+        opacity: .2;
+      }
+    }
+  }
+}

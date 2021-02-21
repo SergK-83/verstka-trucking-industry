@@ -1,0 +1,108 @@
+/*
+====================================
+  forms
+====================================
+*/
+
+::placeholder {
+  color: #ccc !important;
+}
+
+.form-subtitle {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.col-form-label, .custom-control-label {
+  color: #7f7f7f;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+}
+
+.custom-control-input:focus~.custom-control-label::before {
+  box-shadow: none;
+}
+
+.custom-control-input:focus:not(:checked)~.custom-control-label::before {
+  border-color: #adb5bd;
+}
+
+.form-control {
+  padding: 6px 10px;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 2px;
+  color: #000;
+  font-size: 13px;
+  font-weight: 300;
+  font-family: "HelveticaNeueCyr", Helvetica, Arial, sans-serif;
+}
+
+.form-control:focus {
+  border-color: #b1bbc4;
+  box-shadow: none !important;
+}
+
+textarea.form-control {
+  resize: vertical;
+  width: 100%;
+}
+
+.textarea-no-resize {
+  resize: none;
+}
+
+.form-dark {
+  padding: 30px 20px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.form-dark__title {
+  font-size: 23px;
+  font-weight: 400;
+  text-align: center;
+  color: #eee;
+}
+
+p.form-dark__caption {
+  text-align: center;
+  color: #bbb;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.form-dark {
+  input, textarea, .form-control {
+    border-color: transparent;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5) !important;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    outline: none;
+    color: #dfdfdf;
+    letter-spacing: 1px;
+    box-shadow: none;
+  }
+
+  input:focus, textarea:focus {
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6) !important;
+  }
+
+  ::placeholder {
+    color: #999 !important;
+  }
+
+  textarea.form-control {
+    resize: none;
+  }
+
+  .invalid-feedback {
+    color: #e6717c;
+  }
+}
+
+.form-dark_form {
+  margin-top: 25px;
+}

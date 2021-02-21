@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Title</title>
+
+    <link rel="stylesheet" href="fonts/fonts.css" type="text/css">
+
+    <link rel="stylesheet" href="css/libs.min.css" type="text/css">
+    <link rel="stylesheet" href="libs/slick/slick.css" type="text/css">
+    <link rel="stylesheet" href="libs/aos/aos.css" type="text/css">
+    <link rel="stylesheet" href="libs/fancybox/css/jquery.fancybox.min.css" type="text/css">
+    <link rel="stylesheet" href="css/main.min.css" type="text/css">
+
+    <link rel="icon" href="img/favicons/favicon.ico">
+</head>
+
+<body data-spy="scroll" data-target="#mainHeaderTarget" data-offset="200">
+
+@@include('./html-blocks/_main-header.html')
+
+<main class="site-page">
+
+    <div class="container">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Галерея</li>
+            </ol>
+        </nav>
+
+        <div class="row">
+            <div class="col-sm-7">
+                <div class="site-page-header">
+                    <h1 class="site-page-header__title">Наша галерея</h1>
+                    <p class="site-page-header__caption">Здесь представлены наши работы</p>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <div class="text-sm-right">
+                    <button type="button" class="btn btn-custom mb-5 text-uppercase" data-toggle="modal" data-target="#modalRequest">Заказать перевозку груза</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="siteGallery" class="mb-5">
+            <a href="img/gallery/s2.jpg" data-fancybox="gallery" data-caption="Подпись к фото">
+                <img alt="Подпись к фото" src="img/gallery/s2.jpg"/>
+            </a>
+            <a href="img/gallery/7867.jpg" data-fancybox="gallery" data-caption="Подпись к фото">
+                <img alt="Подпись к фото" src="img/gallery/7867.jpg"/>
+            </a>
+            <a href="img/gallery/latest-news.jpg" data-fancybox="gallery" data-caption="Подпись к фото">
+                <img alt="Подпись к фото" src="img/gallery/latest-news.jpg"/>
+            </a>
+            <a href="img/gallery/contact-the-command.jpg" data-fancybox="gallery" data-caption="Подпись к фото">
+                <img alt="Подпись к фото" src="img/gallery/contact-the-command.jpg"/>
+            </a>
+            <a href="img/gallery/truck_3.jpg" data-fancybox="gallery" data-caption="Подпись к фото">
+                <img alt="Подпись к фото" src="img/gallery/truck_3.jpg"/>
+            </a>
+            <a href="img/gallery/perevozki.jpg" data-fancybox="gallery" data-caption="Подпись к фото">
+                <img alt="Подпись к фото" src="img/gallery/perevozki.jpg"/>
+            </a>
+            <a href="img/gallery/bg-07-1920x660.jpg" data-fancybox="gallery" data-caption="Подпись к фото">
+                <img alt="Подпись к фото" src="img/gallery/bg-07-1920x660.jpg"/>
+            </a>
+            <a href="img/gallery/perev_furami.jpg" data-fancybox="gallery" data-caption="Подпись к фото">
+                <img alt="Подпись к фото" src="img/gallery/perev_furami.jpg"/>
+            </a>
+            <a href="img/gallery/7867.jpg" data-fancybox="gallery" data-caption="Подпись к фото">
+                <img alt="Подпись к фото" src="img/gallery/7867.jpg"/>
+            </a>
+            <a href="img/gallery/latest-news.jpg" data-fancybox="gallery" data-caption="Подпись к фото">
+                <img alt="Подпись к фото" src="img/gallery/latest-news.jpg"/>
+            </a>
+            <a href="img/gallery/contact-the-command.jpg" data-fancybox="gallery" data-caption="Подпись к фото">
+                <img alt="Подпись к фото" src="img/gallery/contact-the-command.jpg"/>
+            </a>
+            <a href="img/gallery/s2.jpg" data-fancybox="gallery" data-caption="Подпись к фото">
+                <img alt="Подпись к фото" src="img/gallery/s2.jpg"/>
+            </a>
+        </div>
+
+        <div class="text-center">
+            <button type="button" class="btn  btn-outline-secondary">Загрузить еще ...</button>
+        </div>
+    </div>
+</main>
+
+@@include('./html-blocks/_main-footer.html')
+
+@@include('./html-blocks/_modal-request.html')
+
+<!-- scroll up -->
+@@include('./html-blocks/_scrollup.html')
+
+<script src="js/libs.min.js"></script>
+<script src="libs/aos/aos.js"></script>
+<script src="libs/stellar/jquery.stellar.min.js"></script>
+<script src="libs/fancybox/js/jquery.fancybox.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

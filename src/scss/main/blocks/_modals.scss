@@ -1,0 +1,43 @@
+/*
+====================================
+  modals
+====================================
+*/
+
+.modal-dialog {
+  margin-top: 50px;
+}
+
+.modal-content {
+  border-radius: 0;
+  line-height: 1.2;
+
+  .form-subtitle {
+    margin-bottom: 10px;
+  }
+}
+
+.modal-title {
+  text-transform: uppercase;
+
+}
+
+.btn-modal-close {
+  position: absolute;
+  top: 7px;
+  right: 25px;
+  color: #fff;
+  border: none;
+  background-color: transparent;
+  opacity: .7;
+  transition: opacity .15s ease-in-out;
+
+  .icon-custom-cross {
+    font-size: 35px;
+  }
+}
+
+.btn-modal-close:hover {
+  opacity: 1;
+  transition: opacity .15s ease-in-out;
+}

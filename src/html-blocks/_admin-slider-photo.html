@@ -1,0 +1,95 @@
+<h3 class="page-title">Слайдер фото</h3>
+
+<form id="editContentForm" action="" class="needs-validation" novalidate>
+
+    <div class="card">
+        <div class="card-body">
+            <h6 class="card-title fs-13 mb-2">Слайдер с фотографиями</h6>
+            <div class="pt-2 sticky-top text-right">
+                <button type="button" class="btn btn-sm btn-primary btn-file-upload" data-input-file="sliderImageUpload">Добавить слайды</button>
+            </div>
+
+            <p class="text-black-50 fw-400">Только файлы формата .jpeg и .png. Рекомендуемый размер 700 x 700 пикселей.</p>
+
+            <div class="custom-dropzone py-3">
+                <div class="custom-dropzone__container">
+                    <input id="sliderImageUpload" type="file" class="custom-dropzone__input-file" data-input-upload="multiImagesUpload" data-preview-list="sliderImageList" multiple>
+                    <label for="sliderImageUpload" class="custom-dropzone__file-upload">
+                        <svg  width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-upload custom-dropzone__upload-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                            <path fill-rule="evenodd" d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z"/>
+                        </svg>
+                        Переместите файлы или <span class="text-orange">нажмите для загрузки</span>
+                    </label>
+                </div>
+            </div>
+
+            <ul id="sliderImageList" class="list-sortable list-sortable-thumbs">
+                <li class="list-sortable__item">
+                    <span class="list-sortable__item-index">1</span>
+                    <span class="drag-handler icon-arrows"></span>
+                    <span class="list-sortable__item-remove" data-toggle="tooltip" data-placement="left" title="Удалить"></span>
+                    <div class="card-thumb">
+                        <div class="card-thumb__img">
+                            <img src="img/gallery/slide-1.png" alt="грузоперевозки">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Подпись к фото" required>
+                            <div class="invalid-feedback">
+                                Необходимо заполнить
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-sortable__item">
+                    <span class="list-sortable__item-index">2</span>
+                    <span class="drag-handler icon-arrows"></span>
+                    <span class="list-sortable__item-remove" data-toggle="tooltip" data-placement="left" title="Удалить"></span>
+                    <div class="card-thumb">
+                        <div class="card-thumb__img">
+                            <img src="img/gallery/slide-2.png" alt="грузоперевозки">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Подпись к фото" required>
+                            <div class="invalid-feedback">
+                                Необходимо заполнить
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-sortable__item">
+                    <span class="list-sortable__item-index">3</span>
+                    <span class="drag-handler icon-arrows"></span>
+                    <span class="list-sortable__item-remove" data-toggle="tooltip" data-placement="left" title="Удалить"></span>
+                    <div class="card-thumb">
+                        <div class="card-thumb__img">
+                            <img src="img/gallery/slide-3.png" alt="грузоперевозки">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Подпись к фото" required>
+                            <div class="invalid-feedback">
+                                Необходимо заполнить
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-sortable__item">
+                    <span class="list-sortable__item-index">4</span>
+                    <span class="drag-handler icon-arrows"></span>
+                    <span class="list-sortable__item-remove" data-toggle="tooltip" data-placement="left" title="Удалить"></span>
+                    <div class="card-thumb">
+                        <div class="card-thumb__img">
+                            <img src="img/gallery/slide-4.png" alt="грузоперевозки">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Подпись к фото" required>
+                            <div class="invalid-feedback">
+                                Необходимо заполнить
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</form>

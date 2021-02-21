@@ -1,0 +1,133 @@
+<h3 class="page-title">Создание / редактирование услуги</h3>
+
+<form id="editContentForm" action="" novalidate>
+
+    <div class="card">
+        <div class="card-body">
+            <div class="admin-main__content-tools">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                    <label class="custom-control-label" for="customSwitch1">Активация услуги</label>
+                </div>
+                <button type="button" id="removeService" class="btn btn-sm btn-outline-danger" data-toggle="tooltip" data-placement="top" title="Удалить услугу">Удалить</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <h6 class="form-subtitle">Информаця об улсуге</h6>
+            <div class="form-group row">
+                <label for="service-name" class="col-md-2 col-form-label">Наименование</label>
+                <div class="col-md-10">
+                    <input class="form-control" type="text" id="service-name" required>
+                    <div class="invalid-feedback">
+                        Необходимо заполнить
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="service-caption" class="col-md-2 col-form-label">Подзаголовок</label>
+                <div class="col-md-10">
+                    <input class="form-control" type="text" id="service-caption" required>
+                    <div class="invalid-feedback">
+                        Необходимо заполнить
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="descr" class="col-md-2 col-form-label">Описание</label>
+                <div class="col-md-10">
+                    <textarea id="descr" class="summernote form-control" name="editordata" required></textarea>
+                    <div class="invalid-feedback">
+                        Необходимо заполнить
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-2">
+                <hr class="hr-dashed">
+            </div>
+
+            <div class="form-group row">
+                <label class="col-md-2 col-form-label">Баннер</label>
+                <div class="col-md-10">
+
+                    <div class="custom-dropzone">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="custom-dropzone__container">
+                                    <input id="fileInput" type="file" class="custom-dropzone__input-file" multiple="">
+                                    <label for="fileInput" class="custom-dropzone__file-upload">
+                                        <svg  width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-upload custom-dropzone__upload-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                                            <path fill-rule="evenodd" d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z"/>
+                                        </svg>
+                                        Переместите файл или нажмите для загрузки
+                                    </label>
+                                </div>
+                                <small class="form-text text-muted mt-4">Размер одного файла не должен превышать 2 Mb</small>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="custom-dropzone__file-list">
+                                    <div class="custom-dropzone__file-thumb">
+                                        <span class="custom-dropzone__file-thumb-remove action-remove-img" data-toggle="tooltip" data-placement="top" title="Удалить"></span>
+                                        <div class="custom-dropzone__file-thumb-img">
+                                            <img src="img/truck_2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <h6 class="form-subtitle">Настройки страницы</h6>
+            <div class="form-group row">
+                <label for="page-url" class="col-md-2 col-form-label">URL</label>
+                <div class="col-md-10">
+                    <input class="form-control" type="text" id="page-url" required>
+                    <small class="form-text text-muted">
+                        Необходимо заполнить только окончание url-адреса, например, "product" (без кавычек).
+                    </small>
+                    <div class="invalid-feedback">
+                        Необходимо заполнить
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="tag-title" class="col-md-2 col-form-label">title</label>
+                <div class="col-md-10">
+                    <input class="form-control" type="text" id="tag-title" required>
+                    <div class="invalid-feedback">
+                        Необходимо заполнить
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="tag-description" class="col-md-2 col-form-label">description</label>
+                <div class="col-md-10">
+                    <input class="form-control" type="text" id="tag-description" required>
+                    <div class="invalid-feedback">
+                        Необходимо заполнить
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="tag-keywords" class="col-md-2 col-form-label">keywords</label>
+                <div class="col-md-10">
+                    <input class="form-control" type="text" id="tag-keywords" required>
+                    <div class="invalid-feedback">
+                        Необходимо заполнить
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>

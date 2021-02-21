@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Грузоперевозки Автобаланс</title>
+
+    <link rel="stylesheet" href="fonts/fonts.css" type="text/css">
+
+    <link rel="stylesheet" href="css/libs.min.css" type="text/css">
+    <link rel="stylesheet" href="libs/slick/slick.css" type="text/css">
+    <link rel="stylesheet" href="libs/aos/aos.css" type="text/css">
+    <link rel="stylesheet" href="css/main.min.css" type="text/css">
+
+    <link rel="icon" href="img/favicons/favicon.ico">
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body>
+
+@@include('./html-blocks/_main-header.html')
+
+<div id="mainBanner" class="main-banner" data-aos="fade" data-stellar-background-ratio="0.5">
+    <div class="container">
+        <div class="row main-banner__row align-items-center justify-content-center text-center">
+            <div class="main-banner__body" data-aos="fade-up" data-aos-delay="200">
+                <div class="main-banner__body-overlay" data-aos="fade" data-aos-delay="500" data-aos-easing="ease-in-sine" data-aos-duration="1000"></div>
+                <div class="main-banner__body-inner-wrap">
+                    <h1 class="main-banner__title">Грузоперевозки по России</h1>
+                    <p class="main-banner__subtitle">Транспортная компания</p>
+                    <p>
+                        <button class="main-banner__btn btn btn-custom" data-toggle="modal" data-target="#modalСostCalc">Рассчитать стоимость</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="aboutUs" class="page-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 ml-auto mb-5 order-md-2" data-aos="fade-up" data-aos-delay="100">
+                @@include('./html-blocks/_form-request.html')
+            </div>
+
+            <div class="col-md-6 order-md-1" data-aos="fade-up">
+                <div class="page-section__header">
+                    <h2 class="page-section__header-title">Наша компания</h2>
+                </div>
+                <p>Разнообразный и богатый опыт начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.</p>
+                <p class="mb-5">Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации новых предложений.</p>
+
+                <ul class="ul-check success">
+                    <li>Подготовка в кратчайшие сроки</li>
+                    <li>Контроль процесса перевозки груза</li>
+                    <li>Постоянная связь с клиентом</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="page-section bg-light">
+    <div class="container">
+        <div class="page-section__header text-center" data-aos="fade-up">
+            <h2 class="page-section__header-title text-muted">Наши услуги</h2>
+            <p class="page-section__header-caption">Качество гарантируем</p>
+        </div>
+
+        <div class="row align-items-stretch card-thumb-list-cards">
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+                <div class="card-thumb card-thumb_service bg-white shadow-sm card-thumb_hover-move-up text-center">
+                    <h3 class="card-thumb__titile">Негабаритные перевозки на дальние расстояния</h3>
+                    <div class="card-thumb__divider"></div>
+                    <p class="card-thumb__descr">Компания «Автобаланс» гарантирует быструю и надежную перевозку!</p>
+                    <p class="fs-14"><a href="service.html" class="card-thumb__more-details">Подробнее...</a></p>
+                    <button type="button" class="btn btn btn-custom-inverse mb-3" data-toggle="modal" data-target="#modalRequest">Получить консультацию</button>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-thumb card-thumb_service bg-white shadow-sm card-thumb_hover-move-up text-center">
+                    <h3 class="card-thumb__titile">Негабаритные перевозки</h3>
+                    <div class="card-thumb__divider"></div>
+                    <p class="card-thumb__descr">Компания «Автобаланс» гарантирует быструю и надежную перевозку негабаритных грузов по России по выгодным ценам!</p>
+                    <p class="fs-14"><a href="service.html" class="card-thumb__more-details">Подробнее...</a></p>
+                    <button type="button" class="btn btn btn-custom-inverse mb-3" data-toggle="modal" data-target="#modalRequest">Получить консультацию</button>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-thumb card-thumb_service bg-white shadow-sm card-thumb_hover-move-up text-center">
+                    <h3 class="card-thumb__titile">Негабаритные перевозки</h3>
+                    <div class="card-thumb__divider"></div>
+                    <p class="card-thumb__descr">Компания «Автобаланс» гарантирует быструю и надежную перевозку негабаритных грузов по России по выгодным ценам!</p>
+                    <p class="fs-14"><a href="service.html" class="card-thumb__more-details">Подробнее...</a></p>
+                    <button type="button" class="btn btn btn-custom-inverse mb-3" data-toggle="modal" data-target="#modalRequest">Получить консультацию</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-thumb card-thumb_service bg-white shadow-sm card-thumb_hover-move-up text-center">
+                    <h3 class="card-thumb__titile">Негабаритные перевозки</h3>
+                    <div class="card-thumb__divider"></div>
+                    <p class="card-thumb__descr">Компания «Автобаланс» гарантирует быструю и надежную перевозку негабаритных грузов по России по выгодным ценам!</p>
+                    <p class="fs-14"><a href="service.html" class="card-thumb__more-details">Подробнее...</a></p>
+                    <button type="button" class="btn btn btn-custom-inverse mb-3" data-toggle="modal" data-target="#modalRequest">Получить консультацию</button>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="card-thumb card-thumb_service bg-white shadow-sm card-thumb_hover-move-up text-center">
+                    <h3 class="card-thumb__titile">Негабаритные перевозки</h3>
+                    <div class="card-thumb__divider"></div>
+                    <p class="card-thumb__descr">Компания «Автобаланс» гарантирует быструю и надежную перевозку негабаритных грузов по России по выгодным ценам!</p>
+                    <p class="fs-14"><a href="service.html" class="card-thumb__more-details">Подробнее...</a></p>
+                    <button type="button" class="btn btn btn-custom-inverse mb-3" data-toggle="modal" data-target="#modalRequest">Получить консультацию</button>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
+                <div class="card-thumb card-thumb_service bg-white shadow-sm card-thumb_hover-move-up text-center">
+                    <h3 class="card-thumb__titile">Негабаритные перевозки</h3>
+                    <div class="card-thumb__divider"></div>
+                    <p class="card-thumb__descr">Компания «Автобаланс» гарантирует быструю и надежную перевозку негабаритных грузов по России по выгодным ценам!</p>
+                    <p class="fs-14"><a href="service.html" class="card-thumb__more-details">Подробнее...</a></p>
+                    <button type="button" class="btn btn btn-custom-inverse mb-3" data-toggle="modal" data-target="#modalRequest">Получить консультацию</button>
+                </div>
+            </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="200">
+            <hr>
+            <div class="text-center mt-4">
+                <a href="list-service.html" class="btn btn-secondary text-uppercase">
+                    Посмотреть все услуги
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="page-section">
+    <div class="container">
+        <div class="page-section__header text-center">
+            <h2 class="page-section__header-title">Наши работы</h2>
+            <p class="page-section__header-caption">Фотогалерея наших работ</p>
+        </div>
+    </div>
+
+    <div class="owl-carousel owl-carousel-thumbs">
+        <div>
+            <div class="slider-unit text-center">
+                <img src="img/gallery/slide-1.png" alt="Image" class="img-fluid">
+                <div class="slider-unit__text">
+                    <h3 class="slider-unit__heading">Описание картинки</h3>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="slider-unit text-center">
+                <img src="img/gallery/slide-2.png" alt="Image" class="img-fluid">
+                <div class="slider-unit__text">
+                    <h3 class="slider-unit__heading">Негабараитные перевозки</h3>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="slider-unit text-center">
+                <img src="img/gallery/slide-3.png" alt="Image" class="img-fluid">
+                <div class="slider-unit__text">
+                    <h3 class="slider-unit__heading">Железнодорожные перевозки</h3>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="slider-unit text-center">
+                <img src="img/gallery/slide-4.png" alt="Image" class="img-fluid">
+                <div class="slider-unit__text">
+                    <h3 class="slider-unit__heading">Перевозка большой емкости</h3>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="slider-unit text-center">
+                <img src="img/gallery/slide-5.png" alt="Image" class="img-fluid">
+                <div class="slider-unit__text">
+                    <h3 class="slider-unit__heading">Перевозка крана</h3>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="slider-unit text-center">
+                <img src="img/gallery/slide-6.png" alt="Image" class="img-fluid">
+                <div class="slider-unit__text">
+                    <h3 class="slider-unit__heading">Перевозка крана</h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <hr>
+        <div class="text-center mt-4">
+            <a href="gallery.html" class="btn btn-outline-secondary text-uppercase">
+                Перейти в галерею
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="page-section page-section_feedbacks">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="page-section__header text-center">
+            <h2 class="page-section__header-title text-white">Отзывы наших клиентов</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="position-relative">
+                    <div class="overlay bg-dott"></div>
+                    <img src="img/handshake.jpg" alt="Рукопожатие" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="owl-carousel owl-carousel-feedbacks">
+                    <div class="owl-carousel-feedbacks__item">
+                        <h5 class="owl-carousel-feedbacks__item-title">Андреев Андрей</h5>
+                        <p class="owl-carousel-feedbacks__item-caption">Руководитель группы компаний</p>
+                        <p class="owl-carousel-feedbacks__item-text">
+                            Разнообразный и богатый опыт начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.
+                        </p>
+                    </div>
+                    <div class="owl-carousel-feedbacks__item">
+                        <h5 class="owl-carousel-feedbacks__item-title">Андреев Андрей</h5>
+                        <p class="owl-carousel-feedbacks__item-caption">Руководитель группы компаний</p>
+                        <p class="owl-carousel-feedbacks__item-text">
+                            Разнообразный и богатый опыт начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 text-center mt-5">
+            <a href="list-reviews.html" class="btn btn-outline-secondary text-uppercase text-white">Все отзывы</a>
+        </div>
+    </div>
+</section>
+
+<section class="page-section">
+    <div class="container">
+        <div class="page-section__header text-center">
+            <h2 class="page-section__header-title text-muted">Наш блог</h2>
+            <p class="page-section__header-caption">Новости в сфере грузоперевозок</p>
+        </div>
+
+        <div class="row align-items-stretch card-thumb-list-cards">
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                <a href="article.html" class="card-thumb card-thumb_article card-thumb_hover-img-turn">
+                    <div class="card-thumb__img justify-content-start">
+                        <img src="img/s2.jpg" alt="">
+                    </div>
+                    <p class="card-thumb__img-caption">15.12.2020</p>
+                    <div>
+                        <h3 class="card-thumb__titile card-thumb__titile_hover-highlight">Новые требования к перевозке негабаритных грузов на территории Российской Федерации</h3>
+                        <p class="card-thumb__descr">Компания «Автобаланс» гарантирует быструю и надежную перевозку негабаритных грузов по России по выгодным ценам!</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                <a href="article.html" class="card-thumb card-thumb_article card-thumb_hover-img-turn">
+                    <div class="card-thumb__img justify-content-start">
+                        <img src="img/s2.jpg" alt="">
+                    </div>
+                    <p class="card-thumb__img-caption">15.12.2020</p>
+                    <div>
+                        <h3 class="card-thumb__titile card-thumb__titile_hover-highlight">Новые требования к перевозке негабаритных грузов на территории Российской Федерации</h3>
+                        <p class="card-thumb__descr">Компания «Автобаланс» гарантирует быструю и надежную перевозку негабаритных грузов по России по выгодным ценам!</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                <a href="article.html" class="card-thumb card-thumb_article card-thumb_hover-img-turn">
+                    <div class="card-thumb__img justify-content-start">
+                        <img src="img/s2.jpg" alt="">
+                    </div>
+                    <p class="card-thumb__img-caption">15.12.2020</p>
+                    <div>
+                        <h3 class="card-thumb__titile card-thumb__titile_hover-highlight">Новые требования к перевозке негабаритных грузов на территории Российской Федерации</h3>
+                        <p class="card-thumb__descr">Компания «Автобаланс» гарантирует быструю и надежную перевозку негабаритных грузов по России по выгодным ценам!</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <hr>
+        <div class="text-center mt-4">
+            <a href="list-articles.html" class="btn btn-secondary text-uppercase">
+                Все статьи
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="contacts" class="page-section bg-light">
+    <div class="container">
+        <div class="page-section__header text-center">
+            <h2 class="page-section__header-title">Наши контакты</h2>
+            <p class="page-section__header-caption">Свяжитесь с нами любым удобным способом</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-7 mb-4">
+                <form id="formRequest" class="p-4 bg-white" novalidate>
+                    <p class="font-weight-normal">Мы рады ответить на все ваши вопросы</p>
+
+                    <div class="row form-group">
+                        <div class="col-lg-6 mb-3 mb-lg-0">
+                            <input id="clientName" autocomplete="off" type="text" class="form-control" placeholder="Ваше имя" required>
+                            <div class="invalid-feedback">
+                                Необходимо заполнить
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <input id="clientPhone" type="text" class="form-control input-phone" placeholder="+7 ( ___ ) ___ - __ - __" required>
+                            <div class="invalid-feedback">
+                                Необходимо заполнить
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="6" class="form-control" placeholder="Кратко опишите задачу"></textarea>
+                    </div>
+                    <div class="mt-4">
+                        <button class="btn btn-custom text-uppercase btn-form-validation" data-formId="formRequest">Получить консультацию</button>
+                    </div>
+                    <p class="text-muted fs-13 mt-3">Нажимая на кнопку, вы соглашаетесь с <a href="privacy-policy.html" class="text-info">политикой конфиденциальности</a></p>
+                </form>
+            </div>
+            <div class="col-md-5">
+                <div class="p-4 mb-3 bg-white fs-15">
+                    <p class="mb-0 fw-500">Адрес</p>
+                    <p class="mb-4">660135, Россия, г.Красноярск, ул.Взлетная 28, пом.187, офис 202</p>
+
+                    <p class="mb-0 fw-500">Номер телефона</p>
+                    <p class="mb-4"><a href="tel: +7 (391) 272-92-05">+7 (391) 272-92-05</a></p>
+
+                    <p class="mb-0 fw-500">Электронная почта</p>
+                    <p class="mb-4"><a href="#" data-toggle="modal" data-target="#modalRequest">ab9205@mail.ru</a></p>
+
+                    <p class="mb-0 fw-500">Мессенджеры</p>
+                    <div class="soc-net">
+                        <a class="soc-net__item soc-net__item_whatsapp" href="https://api.whatsapp.com/send?phone=+79676129205"></a>
+                        <a class="soc-net__item soc-net__item_viber" href="viber://chat?number=%2B79676129205"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="mapOffice" class="contacts-map"></div>
+    </div>
+</section>
+
+@@include('./html-blocks/_main-footer.html')
+
+@@include('./html-blocks/_modal-request.html')
+@@include('./html-blocks/_modal-cost-calc.html')
+
+<!-- scroll up -->
+@@include('./html-blocks/_scrollup.html')
+
+<script src="js/libs.min.js"></script>
+<script src="libs/slick/slick.min.js"></script>
+<script src="libs/aos/aos.js"></script>
+<script src="libs/stellar/jquery.stellar.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

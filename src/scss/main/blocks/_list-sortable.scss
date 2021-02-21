@@ -1,0 +1,136 @@
+.list-sortable {
+
+  li {
+    position: relative;
+    padding-left: 30px;
+    margin: 10px 0;
+  }
+
+  .drag-handler {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 5px;
+    z-index: 5;
+    color: #b6b6b6;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .list-sortable__item-index {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ccc;
+    background-color: rgba(255,255,255, .9);
+    font-size: 12px;
+    font-weight: 600;
+    color: #999;
+  }
+
+  .list-sortable__item-remove {
+    display: none;
+    position: absolute;
+    top: -2px;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    background-image: url('data:image/svg+xml,<svg viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg>');
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    opacity: .3;
+  }
+
+  li:hover {
+    .drag-handler, .list-sortable__item-remove {
+      display: inline-block;
+    }
+
+  }
+
+  .dragged {
+    position: absolute !important;
+    opacity: 0.5;
+    z-index: 2000;
+  }
+
+  li.placeholder {
+    position: relative;
+    display: block;
+    height: 60px;
+    background: rgba(255, 255, 255, .8);
+    border: 2px dashed #c5c5c5;
+    border-radius: 3px;
+  }
+  
+  li.placeholder:before {
+    position: absolute;
+  }
+
+  .card {
+    margin-bottom: 0 !important;
+  }
+}
+
+.list-sortable-thumbs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+
+  li {
+    margin: 10px;
+    padding: 20px 0 0;
+
+    .card-thumb {
+      width: 240px;
+      padding: 0;
+    }
+
+    .card-thumb__img {
+      width: 240px;
+      height: 240px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding: 2px;
+      box-shadow: 0 1px 3px 1px rgba(0,0,0,.1);
+
+      img {
+        width: auto;
+        max-width: 100%;
+        max-height: 100%;
+        transform: scale(1);
+        transition: .2s transform ease-in-out;
+      }
+    }
+  }
+
+  li.placeholder {
+    top: 20px;
+    height: 240px;
+    width: 200px;
+  }
+
+  .list-sortable__item-index {
+    top: 20px;
+  }
+
+  .drag-handler {
+    top: 0;
+  }
+
+  li:hover {
+    .card-thumb__img img {
+      transform: scale(1.05);
+      transition: .2s transform ease-in-out;
+    }
+  }
+}

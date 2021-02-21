@@ -1,0 +1,26 @@
+/*
+====================================
+ soc-net
+====================================
+*/
+
+.soc-net {
+  display: inline-flex;
+}
+
+.soc-net__item {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin: 10px;
+  background: url("../img/icon/sprite-viber-whatsapp.png") no-repeat;
+  background-size: auto 100%;
+}
+
+.soc-net__item_whatsapp {
+  background-position: 0 center;
+}
+
+.soc-net__item_viber {
+  background-position: 100% center;
+}

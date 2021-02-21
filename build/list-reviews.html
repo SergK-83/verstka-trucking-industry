@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Title</title>
+
+    <link rel="stylesheet" href="fonts/fonts.css" type="text/css">
+
+    <link rel="stylesheet" href="css/libs.min.css" type="text/css">
+    <link rel="stylesheet" href="libs/slick/slick.css" type="text/css">
+    <link rel="stylesheet" href="libs/aos/aos.css" type="text/css">
+    <link rel="stylesheet" href="libs/fancybox/css/jquery.fancybox.min.css" type="text/css">
+    <link rel="stylesheet" href="css/main.min.css" type="text/css">
+
+    <link rel="icon" href="img/favicons/favicon.ico">
+</head>
+
+<body data-spy="scroll" data-target="#mainHeaderTarget" data-offset="200">
+
+<header id="mainHeaderTarget" class="main-header">
+    <div class="container">
+        <div class="main-header__navbar">
+            <div class="dropdown">
+                <div class="main-header__logo" data-toggle="dropdown"></div>
+
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="index.html">Главная</a>
+                    <a class="dropdown-item" href="list-service.html">Список улуг</a>
+                    <a class="dropdown-item" href="service.html">Услуга</a>
+                    <a class="dropdown-item" href="list-articles.html">Список статей</a>
+                    <a class="dropdown-item" href="article.html">Статья</a>
+                    <a class="dropdown-item" href="gallery.html">Галерея</a>
+                    <a class="dropdown-item" href="list-reviews.html">Отзывы</a>
+                    <a class="dropdown-item" href="auth-login.html">Авторизация</a>
+                    <a class="dropdown-item" href="admin-main.html">Админка</a>
+                    <a class="dropdown-item" href="error-404.html">Страница ошибки</a>
+                </div>
+            </div>
+
+            <nav id="siteNav" class="main-header__nav">
+                <span id="siteNavClose" class="main-header__nav-close">
+                    <span class="icon-custom-cross"></span>
+                </span>
+                <ul class="main-header__menu">
+                    <li><a href="index.html" class="main-header__menu-link">Главная</a></li>
+                    <li><a href="index.html#aboutUs" class="main-header__menu-link">О нас</a></li>
+                    <li><a href="list-service.html" class="main-header__menu-link">Услуги</a></li>
+                    <li><a href="index.html#contacts" class="main-header__menu-link">Контакты</a></li>
+                </ul>
+
+                <div class="fw-300 d-md-none">
+                    <a href="tel: +7 (391) 272-92-05" class="main-header__phone">+7 (391) 272-92-05 </a>
+                    <a href="#" class="main-header__caption" data-toggle="modal" data-target="#modalRequest">ab9205@mail.ru</a>
+                </div>
+            </nav>
+            <div class="fw-300 d-none d-md-block">
+                <a href="tel: +7 (391) 272-92-05" class="main-header__phone">+7 (391) 272-92-05 </a>
+                <a href="#" class="main-header__caption" data-toggle="modal" data-target="#modalRequest">ab9205@mail.ru</a>
+            </div>
+            <div id="siteNavToggle" class="main-header__nav-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+<main class="site-page">
+
+    <div class="container">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Отзывы наших клиентов</li>
+            </ol>
+        </nav>
+
+        <div class="site-page-header">
+            <h1 class="site-page-header__title">Отзывы наших клиентов</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-md-7">
+                <div class="bg-light p-1 p-sm-2 mb-5">
+                    <div class="card-thumb card-thumb_review bg-white shadow-sm mb-4">
+                        <div class="d-flex align-items-start">
+                            <div class="mr-3 text-warning">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                     class="bi bi-award-fill" viewBox="0 0 16 16">
+                                    <path d="M8 0l1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"/>
+                                    <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="card-thumb__titile">Владимиров Владислав Александрович</h3>
+                                <p class="card-thumb__caption">Руководитель группы компаний</p>
+                            </div>
+                        </div>
+                        <p class="card-thumb__descr">Разнообразный и богатый опыт начало повседневной работы по
+                            формированию позиции влечет за собой процесс внедрения и модернизации позиций, занимаемых
+                            участниками в отношении поставленных задач.</p>
+                        <div class="card-thumb__img-list">
+                            <a href="img/thank-letter.jpg" class="card-thumb__img-item" data-fancybox="gallery">
+                                <img alt="Подпись к фото" src="img/thank-letter.jpg"/>
+                            </a>
+                            <a href="img/thank-letter.jpg" class="card-thumb__img-item" data-fancybox="gallery">
+                                <img alt="Подпись к фото" src="img/thank-letter.jpg"/>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card-thumb card-thumb_review bg-white shadow-sm mb-4">
+                        <div class="d-flex align-items-start">
+                            <div class="mr-3 text-warning">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                     class="bi bi-award-fill" viewBox="0 0 16 16">
+                                    <path d="M8 0l1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"/>
+                                    <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="card-thumb__titile">Андреев Андрей</h3>
+                                <p class="card-thumb__caption">Руководитель группы компаний</p>
+                            </div>
+                        </div>
+                        <p class="card-thumb__descr">Разнообразный и богатый опыт начало повседневной работы по
+                            формированию позиции влечет за собой процесс внедрения и модернизации позиций, занимаемых
+                            участниками в отношении поставленных задач.</p>
+                    </div>
+
+                    <div class="card-thumb card-thumb_review bg-white shadow-sm mb-4">
+                        <div class="d-flex align-items-start">
+                            <div class="mr-3 text-warning">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                     class="bi bi-award-fill" viewBox="0 0 16 16">
+                                    <path d="M8 0l1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"/>
+                                    <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="card-thumb__titile">Андреев Андрей</h3>
+                                <p class="card-thumb__caption">Руководитель группы компаний</p>
+                            </div>
+                        </div>
+                        <p class="card-thumb__descr">Разнообразный и богатый опыт начало повседневной работы по
+                            формированию позиции влечет за собой процесс внедрения и модернизации позиций, занимаемых
+                            участниками в отношении поставленных задач.</p>
+                    </div>
+
+                    <div class="text-center mb-3">
+                        <button type="button" class="btn  btn-outline-secondary">Загрузить еще ...</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 pl-lg-5">
+                <div class="mb-5">
+                    <div class="bg-cover" style="background-image: url('img/contact-the-command_1.png')">
+    <div class="bg-dott">
+        <div class="form-dark">
+            <h4 class="form-dark__title">Необходимо перевезти <span class="text-warning">груз</span> ?</h4>
+            <p class="form-dark__caption">Получите подробную консультацию</p>
+            <form id="darkFormRequest" class="form-dark_form" novalidate>
+                <div class="form-group">
+                    <input autocomplete="off" type="text" class="form-control" placeholder="Ваше имя" required>
+                    <div class="invalid-feedback">
+                        Необходимо заполнить
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control input-phone" placeholder="+7 ( ___ ) ___ - __ - __" required>
+                    <div class="invalid-feedback">
+                        Необходимо заполнить
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea rows="6" class="form-control" placeholder="Кратко опишите задачу"></textarea>
+                </div>
+                <div class="text-center mt-5">
+                    <button class="btn btn-custom btn-block text-uppercase btn-form-validation" data-formId="darkFormRequest">Получить консультацию</button>
+                    <p class="text-white-50 fs-13 mt-4">Нажимая на кнопку, вы соглашаетесь с <a href="privacy-policy.html" class="text-white">политикой конфиденциальности</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+                </div>
+
+                <h6 class="border-bottom border-info text-uppercase text-secondary pb-2">Наши услуги</h6>
+
+                <ul class="list-group list-group-flush fs-14 fw-400 border-b mb-4">
+                    <li class="list-group-item">
+                        <a href="#">Негабаритные перевозки</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">Перевозка иных грузов</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">Железнодорожные перевозки</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">Перевозка других грузов</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">Оформление разрешений</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">Перевозка иных грузов</a>
+                    </li>
+                </ul>
+
+                <div class="text-right">
+                    <a href="list-service.html" class="btn btn-sm btn-outline-secondary text-uppercase">
+                        Посмотреть все улуги
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="main-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-5 mb-4 mr-auto">
+                        <h2 class="main-footer__title mb-4">ООО Автобаланс</h2>
+                        <p>Разнообразный и богатый опыт начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.</p>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <h2 class="main-footer__title mb-4">Навигация</h2>
+                        <ul>
+                            <li><a href="index.html#aboutUs">О нас</a></li>
+                            <li><a href="list-service.html">Услуги</a></li>
+                            <li><a href="gallery.html">Галерея</a></li>
+                            <li><a href="list-articles.html">Наш блог</a></li>
+                            <li><a href="list-reviews.html">Отзывы</a></li>
+                            <li><a href="index.html#contacts">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <form id="footerFormRequest" novalidate>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control input-phone border-secondary text-white bg-transparent" placeholder="+7 ( ___ ) ___ - __ - __" required>
+                        <div class="input-group-append">
+                            <button class="btn btn-custom text-white btn-form-validation" type="button" data-formId="footerFormRequest">Отправить</button>
+                        </div>
+                        <div class="invalid-feedback">
+                            Необходимо заполнить
+                        </div>
+                    </div>
+
+                    <p class="text-white-50"><small>Отправьте ваш номер телефона, и мы перезвоним вам</small></p>
+                    <p class="text-white-50 fs-11 mt-3">Нажимая на кнопку, вы соглашаетесь с <a href="privacy-policy.html" class="text-secondary">политикой конфиденциальности</a></p>
+                </form>
+            </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+            <div class="col-md-12">
+                <div class="border-top pt-5">
+                    <p>
+                        Транспортно-экспедиционная компания «Автобаланс»
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<div id="modalRequest" class="modal fade" tabindex="-1">
+    <button type="button" class="btn-modal-close" data-dismiss="modal" aria-label="Close">
+        <span class="icon-custom-cross"></span>
+    </button>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title">Получить консультацию</h5>
+            </div>
+            <div class="modal-body">
+                <p class="text-muted"><small>Отправьте ваши данные для получения подробной консультации</small></p>
+                <form id="modalRequestForm" novalidate>
+                    <div class="form-group">
+                        <input autocomplete="off" type="text" class="form-control" placeholder="Введите ваше имя" required>
+                        <div class="invalid-feedback">
+                            Необходимо заполнить
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control input-phone" placeholder="+7 ( ___ ) ___ - __ - __" required>
+                        <div class="invalid-feedback">
+                            Необходимо заполнить
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="6" class="form-control" placeholder="Кратко опишите задачу"></textarea>
+                    </div>
+                </form>            </div>
+            <div class="modal-footer border-0">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+                <button class="btn btn-primary btn-form-validation" data-formId="modalRequestForm">Отправить</button>
+
+                <p class="text-muted fs-13 mt-3">Нажимая на кнопку, вы соглашаетесь с <a href="privacy-policy.html" class="text-info">политикой конфиденциальности</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- scroll up -->
+<div id="scrollup" class="scrollup-wrap">
+    <div class="scrollup"></div>
+</div>
+
+<script src="js/libs.min.js"></script>
+<script src="libs/aos/aos.js"></script>
+<script src="libs/stellar/jquery.stellar.min.js"></script>
+<script src="libs/fancybox/js/jquery.fancybox.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

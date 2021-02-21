@@ -1,0 +1,37 @@
+<div id="modalRequest" class="modal fade" tabindex="-1">
+    <button type="button" class="btn-modal-close" data-dismiss="modal" aria-label="Close">
+        <span class="icon-custom-cross"></span>
+    </button>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title">Получить консультацию</h5>
+            </div>
+            <div class="modal-body">
+                <p class="text-muted"><small>Отправьте ваши данные для получения подробной консультации</small></p>
+                <form id="modalRequestForm" novalidate>
+                    <div class="form-group">
+                        <input autocomplete="off" type="text" class="form-control" placeholder="Введите ваше имя" required>
+                        <div class="invalid-feedback">
+                            Необходимо заполнить
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control input-phone" placeholder="+7 ( ___ ) ___ - __ - __" required>
+                        <div class="invalid-feedback">
+                            Необходимо заполнить
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="6" class="form-control" placeholder="Кратко опишите задачу"></textarea>
+                    </div>
+                </form>            </div>
+            <div class="modal-footer border-0">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+                <button class="btn btn-primary btn-form-validation" data-formId="modalRequestForm">Отправить</button>
+
+                <p class="text-muted fs-13 mt-3">Нажимая на кнопку, вы соглашаетесь с <a href="privacy-policy.html" class="text-info">политикой конфиденциальности</a></p>
+            </div>
+        </div>
+    </div>
+</div>

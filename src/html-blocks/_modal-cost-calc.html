@@ -1,0 +1,84 @@
+<div id="modalСostCalc" class="modal fade" tabindex="-1">
+    <button type="button" class="btn-modal-close" data-dismiss="modal" aria-label="Close">
+        <span class="icon-custom-cross"></span>
+    </button>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title">Рассчитать стоимость</h5>
+            </div>
+            <div class="modal-body">
+                <p class="text-muted"><small>Заполните данные для рассчета стоимости перевозки</small></p>
+                <form id="modalСostCalcForm" novalidate>
+                    <div class="form-group">
+                        <input autocomplete="off" type="text" class="form-control" placeholder="Введите ваше имя" required>
+                        <div class="invalid-feedback">
+                            Необходимо заполнить
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control input-phone" placeholder="+7 ( ___ ) ___ - __ - __" required>
+                        <div class="invalid-feedback">
+                            Необходимо заполнить
+                        </div>
+                    </div>
+                    <hr class="hr-dashed">
+                    <div class="form-subtitle">Маршрут</div>
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <label class="col-form-label">Откуда</label>
+                            <input type="text" class="form-control" placeholder="Откуда" required>
+                            <div class="invalid-feedback">
+                                Необходимо заполнить
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label class="col-form-label">Куда</label>
+                            <input type="text" class="form-control" placeholder="Куда" required>
+                            <div class="invalid-feedback">
+                                Необходимо заполнить
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="hr-dashed">
+                    <label class="col-form-label">Габариты груза (д*ш*в), м.</label>
+                    <div class="form-row">
+                        <div class="form-group col-sm-4">
+                            <input type="text" class="form-control" placeholder="Длина" required>
+                            <div class="invalid-feedback">
+                                Необходимо заполнить
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <input type="text" class="form-control" placeholder="Ширина" required>
+                            <div class="invalid-feedback">
+                                Необходимо заполнить
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <input type="text" class="form-control" placeholder="Высота" required>
+                            <div class="invalid-feedback">
+                                Необходимо заполнить
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">Масса груза, т.</label>
+                        <input type="text" class="form-control" required>
+                        <div class="invalid-feedback">
+                            Необходимо заполнить
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="3" class="form-control" placeholder="Характер груза"></textarea>
+                    </div>
+                </form>            </div>
+            <div class="modal-footer border-0">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+                <button class="btn btn-primary btn-form-validation" data-formId="modalСostCalcForm">Отправить</button>
+
+                <p class="text-muted fs-13 mt-3">Нажимая на кнопку, вы соглашаетесь с <a href="privacy-policy.html" class="text-info">политикой конфиденциальности</a></p>
+            </div>
+        </div>
+    </div>
+</div>

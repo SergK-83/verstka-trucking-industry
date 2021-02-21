@@ -1,0 +1,31 @@
+/*
+====================================
+  main-footer
+====================================
+*/
+
+.main-footer {
+  margin-top: 0;
+  padding: 100px 0 30px;
+  background: #333;
+  color: #737373;
+  font-family: Montserrat,sans-serif;
+  font-weight: 400;
+
+  ul li {
+    margin-bottom: 10px;
+  }
+
+  a {
+    color: #999999;
+  }
+
+  a:hover {
+    color: white;
+  }
+}
+
+.main-footer__title {
+  font-size: 16px;
+  color: #fff;
+}

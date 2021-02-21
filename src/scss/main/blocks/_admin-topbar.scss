@@ -1,0 +1,75 @@
+/*
+====================================
+  admin-topbar
+====================================
+*/
+
+.admin-topbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1002;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,.08);
+}
+
+.admin-topbar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+}
+
+.admin-topbar__logo {
+  width: 240px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 24px;
+  background-color: #252b3b;
+  transition: width .2s ease-in-out;
+
+  .admin-topbar__logo-bgr {
+    display: inline-block;
+    width: 192px;
+    height: 45px;
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .2s ease-in-out;
+  }
+}
+
+.admin-topbar__menu-toggle {
+  svg path {
+    stroke: #636e75;
+  }
+}
+
+.admin-layout.sidebar-collapsed {
+  .admin-topbar__logo-bgr {
+    height: 23px;
+    transition: .2s ease-in-out;
+  }
+
+  .admin-topbar__logo {
+    width: 70px !important;
+    transition: width .2s ease-in-out;
+  }
+}
+
+@media (max-width: 425px) {
+  .admin-topbar__logo {
+    width: 180px;
+    height: 70px;
+    padding: 0 10px;
+
+    .admin-topbar__logo-bgr {
+      width: 170px;
+      height: 36px;
+      background-size: contain;
+    }
+  }
+}

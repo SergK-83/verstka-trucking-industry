@@ -1,0 +1,110 @@
+/*
+====================================
+  main-banner
+====================================
+*/
+
+.main-banner {
+  height: calc(100vh);
+  background-image: url(../img/truck_1.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 100px;
+}
+
+.main-banner__row {
+  height: calc(100vh);
+}
+
+.main-banner__body {
+  position: relative;
+  padding: 30px 40px;
+}
+
+.main-banner__body-inner-wrap {
+  position: relative;
+  z-index: 5;
+}
+
+.main-banner__body-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background: radial-gradient(#333, transparent);
+}
+
+.main-banner__title {
+  font-size: 56px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+.main-banner__subtitle {
+  margin-top: 7px;
+  margin-bottom: 45px;
+  font-size: 19px;
+  font-weight: 300;
+  color: #aaa;
+  text-transform: capitalize;
+}
+
+.main-banner__btn {
+  padding: 18px 48px;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1;
+  border: 2px solid transparent;
+  border-radius: 1px;
+}
+
+.main-banner__btn:hover {
+  color: #fff !important;
+  background: none;
+  border-color: #fff;
+}
+
+@media (max-width: 1250px) {
+  .main-banner__title {
+    font-size: 45px;
+  }
+
+  .main-banner__subtitle {
+    font-size: 16px;
+  }
+
+  .main-banner__btn {
+    padding: 14px 38px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 991px) {
+  .main-banner {
+    margin-bottom: 0;
+  }
+
+  .main-banner__title {
+    font-size: 37px;
+  }
+
+  .main-banner__subtitle {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-banner__title {
+    font-size: 25px;
+    line-height: 1.4;
+  }
+
+  .main-banner__subtitle {
+    font-size: 13px;
+  }
+}

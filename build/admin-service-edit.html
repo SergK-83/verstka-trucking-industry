@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Title</title>
+
+    <link rel="stylesheet" href="fonts/fonts.css" type="text/css">
+
+    <link rel="stylesheet" href="css/libs.min.css" type="text/css">
+    <link rel="stylesheet" href="libs/summernote/summernote-bs4.min.css" type="text/css">
+    <link rel="stylesheet" href="css/main.min.css" type="text/css">
+
+    <link rel="icon" href="img/favicons/favicon.ico">
+</head>
+
+<body>
+
+<div id="adminLayout" class="admin-layout">
+
+    <header id="page-topbar" class="admin-topbar">
+    <div class="admin-topbar__container">
+        <div class="d-flex">
+
+            <div id="topbarLogo" class="admin-topbar__logo">
+                <a href="index.html" class="admin-topbar__logo-bgr"></a>
+            </div>
+
+            <button id="topbarToggle" type="button" class="btn btn-sm px-3 admin-topbar__menu-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+            </button>
+        </div>
+        <button class="btn btn-sm btn-outline-secondary">Выход</button>
+    </div>
+</header>
+
+    <div class="admin-sidebar">
+    <ul class="admin-sidebar__menu nav" data-simplebar>
+        <li class="admin-sidebar__item">
+            <a href="admin-main.html" class="admin-sidebar__item-link active">
+                <span class="admin-sidebar__item-icon">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+  <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+</svg>
+                </span>
+                <span>Главная</span>
+            </a>
+        </li>
+        <li class="admin-sidebar__item">
+            <a href="admin-services-list.html" class="admin-sidebar__item-link">
+                <span class="admin-sidebar__item-icon">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-briefcase-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+  <path fill-rule="evenodd" d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5v1.384l-7.614 2.03a1.5 1.5 0 0 1-.772 0L0 5.884V4.5zm5-2A1.5 1.5 0 0 1 6.5 1h3A1.5 1.5 0 0 1 11 2.5V3h-1v-.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V3H5v-.5z"/>
+</svg>
+                </span>
+                <span>Услуги</span>
+            </a>
+        </li>
+        <li class="admin-sidebar__item">
+            <a href="admin-reviews.html" class="admin-sidebar__item-link">
+                <span class="admin-sidebar__item-icon">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-dots-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+</svg>
+                </span>
+                <span>Отзывы</span>
+            </a>
+        </li>
+        <li class="admin-sidebar__item">
+            <a  href="admin-blog.html" class="admin-sidebar__item-link">
+                <span class="admin-sidebar__item-icon">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-text-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/>
+</svg>
+                </span>
+                <span>Наш блог</span>
+            </a>
+        </li>
+        <li class="admin-sidebar__item">
+            <a href="admin-slider-photo.html" class="admin-sidebar__item-link">
+                <span class="admin-sidebar__item-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-file-slides-fill" viewBox="0 0 16 16">
+  <path d="M7 7.78V5.22c0-.096.106-.156.19-.106l2.13 1.279a.125.125 0 0 1 0 .214l-2.13 1.28A.125.125 0 0 1 7 7.778z"/>
+  <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM5 4h6a.5.5 0 0 1 .496.438l.5 4A.5.5 0 0 1 11.5 9h-3v2.016c.863.055 1.5.251 1.5.484 0 .276-.895.5-2 .5s-2-.224-2-.5c0-.233.637-.429 1.5-.484V9h-3a.5.5 0 0 1-.496-.562l.5-4A.5.5 0 0 1 5 4z"/>
+</svg>
+                </span>
+                <span>Слайдер фото</span>
+            </a>
+        </li>
+        <li class="admin-sidebar__item">
+            <a href="admin-gallery.html" class="admin-sidebar__item-link">
+                <span class="admin-sidebar__item-icon">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-images" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M12.002 4h-10a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1zm-10-1a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-10zm4 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+  <path fill-rule="evenodd" d="M4 2h10a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1v1a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2h1a1 1 0 0 1 1-1z"/>
+</svg>
+                </span>
+                <span>Галерея</span>
+            </a>
+        </li>
+        <li class="admin-sidebar__item">
+            <a href="admin-settings.html" class="admin-sidebar__item-link">
+                <span class="admin-sidebar__item-icon">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-gear-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 0 0-5.86 2.929 2.929 0 0 0 0 5.858z"/>
+</svg>
+                </span>
+                <span>Настройки</span>
+            </a>
+        </li>
+        <li class="admin-sidebar__item">
+            <a href="admin-request-list.html" class="admin-sidebar__item-link">
+                <span class="admin-sidebar__item-icon">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+</svg>
+                </span>
+                <span>Заявки</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <div class="admin-main">
+
+        <div class="admin-main__body">
+
+            <div class="admin-main__content" data-simplebar data-simplebar-auto-hide="false">
+
+                <h3 class="page-title">Создание / редактирование услуги</h3>
+
+<form id="editContentForm" action="" novalidate>
+
+    <div class="card">
+        <div class="card-body">
+            <div class="admin-main__content-tools">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                    <label class="custom-control-label" for="customSwitch1">Активация услуги</label>
+                </div>
+                <button type="button" id="removeService" class="btn btn-sm btn-outline-danger" data-toggle="tooltip" data-placement="top" title="Удалить услугу">Удалить</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <h6 class="form-subtitle">Информаця об улсуге</h6>
+            <div class="form-group row">
+                <label for="service-name" class="col-md-2 col-form-label">Наименование</label>
+                <div class="col-md-10">
+                    <input class="form-control" type="text" id="service-name" required>
+                    <div class="invalid-feedback">
+                        Необходимо заполнить
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="service-caption" class="col-md-2 col-form-label">Подзаголовок</label>
+                <div class="col-md-10">
+                    <input class="form-control" type="text" id="service-caption" required>
+                    <div class="invalid-feedback">
+                        Необходимо заполнить
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="descr" class="col-md-2 col-form-label">Описание</label>
+                <div class="col-md-10">
+                    <textarea id="descr" class="summernote form-control" name="editordata" required></textarea>
+                    <div class="invalid-feedback">
+                        Необходимо заполнить
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-2">
+                <hr class="hr-dashed">
+            </div>
+
+            <div class="form-group row">
+                <label class="col-md-2 col-form-label">Баннер</label>
+                <div class="col-md-10">
+
+                    <div class="custom-dropzone">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="custom-dropzone__container">
+                                    <input id="fileInput" type="file" class="custom-dropzone__input-file" multiple="">
+                                    <label for="fileInput" class="custom-dropzone__file-upload">
+                                        <svg  width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-upload custom-dropzone__upload-icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                                            <path fill-rule="evenodd" d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z"/>
+                                        </svg>
+                                        Переместите файл или нажмите для загрузки
+                                    </label>
+                                </div>
+                                <small class="form-text text-muted mt-4">Размер одного файла не должен превышать 2 Mb</small>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="custom-dropzone__file-list">
+                                    <div class="custom-dropzone__file-thumb">
+                                        <span class="custom-dropzone__file-thumb-remove action-remove-img" data-toggle="tooltip" data-placement="top" title="Удалить"></span>
+                                        <div class="custom-dropzone__file-thumb-img">
+                                            <img src="img/truck_2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <h6 class="form-subtitle">Настройки страницы</h6>
+            <div class="form-group row">
+                <label for="page-url" class="col-md-2 col-form-label">URL</label>
+                <div class="col-md-10">
+                    <input class="form-control" type="text" id="page-url" required>
+                    <small class="form-text text-muted">
+                        Необходимо заполнить только окончание url-адреса, например, "product" (без кавычек).
+                    </small>
+                    <div class="invalid-feedback">
+                        Необходимо заполнить
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="tag-title" class="col-md-2 col-form-label">title</label>
+                <div class="col-md-10">
+                    <input class="form-control" type="text" id="tag-title" required>
+                    <div class="invalid-feedback">
+                        Необходимо заполнить
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="tag-description" class="col-md-2 col-form-label">description</label>
+                <div class="col-md-10">
+                    <input class="form-control" type="text" id="tag-description" required>
+                    <div class="invalid-feedback">
+                        Необходимо заполнить
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="tag-keywords" class="col-md-2 col-form-label">keywords</label>
+                <div class="col-md-10">
+                    <input class="form-control" type="text" id="tag-keywords" required>
+                    <div class="invalid-feedback">
+                        Необходимо заполнить
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>
+
+            </div>
+
+        </div>
+
+        <div class="admin-main__footer text-center">
+    <button type="button" class="btn btn-outline-secondary mr-4">Отмена</button>
+    <button class="btn btn-success btn-form-validation" data-formId="editContentForm">Сохранить</button>
+</div>
+
+        <div class="admin-main__loader">
+    <div class="admin-main__loader-container">
+        <div class="text-center">
+            <div class="spinner-border text-warning" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <h5 class="text-info mt-5">Сохранение данных ...</h5>
+        </div>
+    </div>
+</div>
+
+    </div>
+
+</div>
+
+<script src="js/libs.min.js"></script>
+<script src="libs/stellar/jquery.stellar.min.js"></script>
+<script src="libs/summernote/summernote-bs4.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

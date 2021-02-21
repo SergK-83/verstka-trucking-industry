@@ -1,0 +1,15 @@
+/*
+====================================
+  custom icons
+====================================
+*/
+
+.icon-custom-cross {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1; }
+
+.icon-custom-cross:after {
+  content: '\2715';
+  display: inline-block; }

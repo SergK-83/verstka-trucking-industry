@@ -1,0 +1,50 @@
+/*
+====================================
+  scrollup
+====================================
+*/
+
+.scrollup-wrap {
+  display: none;
+  position: fixed;
+  right: 25px;
+  bottom: 30px;
+  z-index: 1500;
+  cursor: pointer;
+}
+
+.scrollup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  font-size: 17px;
+  color: #b3b3b3;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 0 #b3b3b3;
+  transition: color .15s ease-in-out;
+}
+
+.scrollup:after {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-width: 2px 2px 0 0;
+  border-style: solid;
+  transform: rotate(-45deg);
+  margin-top: 6px;
+}
+
+.scrollup:hover {
+  color: #c83600;
+  transition: color .15s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .scrollup-wrap {
+    right: 10px;
+  }
+}

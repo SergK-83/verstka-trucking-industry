@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Title</title>
+
+    <link rel="stylesheet" href="fonts/fonts.css" type="text/css">
+
+    <link rel="stylesheet" href="css/libs.min.css" type="text/css">
+    <link rel="stylesheet" href="libs/slick/slick.css" type="text/css">
+    <link rel="stylesheet" href="libs/aos/aos.css" type="text/css">
+    <link rel="stylesheet" href="css/main.min.css" type="text/css">
+
+    <link rel="icon" href="img/favicons/favicon.ico">
+</head>
+
+<body data-spy="scroll" data-target="#mainHeaderTarget" data-offset="200">
+
+@@include('./html-blocks/_main-header.html')
+
+<main class="site-page">
+
+    <div class="container">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Наш блог</li>
+            </ol>
+        </nav>
+
+        <div class="site-page-header">
+            <h1 class="site-page-header__title">Наш блог</h1>
+            <p class="site-page-header__caption">Новости в сфере грузоперевозок</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-7">
+                <div class="bg-light p-1 p-sm-2 mb-5">
+                    <a href="article.html" class="card-thumb card-thumb_article bg-white shadow-sm card-thumb_hover-img-turn mb-4">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card-thumb__img justify-content-start">
+                                    <img src="img/s2.jpg" alt="">
+                                </div>
+                                <p class="card-thumb__img-caption">15.12.2020</p>
+                            </div>
+                            <div class="col-lg-8">
+                                <div>
+                                    <h3 class="card-thumb__titile card-thumb__titile_hover-highlight">Новые требования к перевозке негабаритных грузов на территории Российской Федерации</h3>
+                                    <p class="card-thumb__descr">Задача организации, в особенности же сложившаяся структура организации требуют от нас анализа дальнейших направлений развития. Идейные соображения высшего порядка ...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="article.html" class="card-thumb card-thumb_article bg-white shadow-sm card-thumb_hover-img-turn mb-4">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card-thumb__img justify-content-start">
+                                    <img src="img/s2.jpg" alt="">
+                                </div>
+                                <p class="card-thumb__img-caption">15.12.2020</p>
+                            </div>
+                            <div class="col-lg-8">
+                                <div>
+                                    <h3 class="card-thumb__titile card-thumb__titile_hover-highlight">Новые требования к перевозке негабаритных грузов на территории Российской Федерации</h3>
+                                    <p class="card-thumb__descr">Задача организации, в особенности же сложившаяся структура организации требуют от нас анализа дальнейших направлений развития. Идейные соображения высшего порядка ...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="article.html" class="card-thumb card-thumb_article bg-white shadow-sm card-thumb_hover-img-turn mb-4">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card-thumb__img justify-content-start">
+                                    <img src="img/s2.jpg" alt="">
+                                </div>
+                                <p class="card-thumb__img-caption">15.12.2020</p>
+                            </div>
+                            <div class="col-lg-8">
+                                <div>
+                                    <h3 class="card-thumb__titile card-thumb__titile_hover-highlight">Новые требования к перевозке негабаритных грузов на территории Российской Федерации</h3>
+                                    <p class="card-thumb__descr">Задача организации, в особенности же сложившаяся структура организации требуют от нас анализа дальнейших направлений развития. Идейные соображения высшего порядка ...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="text-center mb-3">
+                        <button type="button" class="btn  btn-outline-secondary">Загрузить еще ...</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 pl-lg-5">
+                <div class="mb-5">
+                    @@include('./html-blocks/_form-request.html')
+                </div>
+
+                <h6 class="border-bottom border-info text-uppercase text-secondary pb-2">Наши услуги</h6>
+
+                <ul class="list-group list-group-flush fs-14 fw-400 border-b mb-4">
+                    <li class="list-group-item">
+                        <a href="#">Негабаритные перевозки</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">Перевозка иных грузов</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">Железнодорожные перевозки</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">Перевозка других грузов</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">Оформление разрешений</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">Перевозка иных грузов</a>
+                    </li>
+                </ul>
+
+                <div class="text-right">
+                    <a href="list-service.html" class="btn btn-sm btn-outline-secondary text-uppercase">
+                        Посмотреть все улуги
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+@@include('./html-blocks/_main-footer.html')
+
+@@include('./html-blocks/_modal-request.html')
+
+<!-- scroll up -->
+@@include('./html-blocks/_scrollup.html')
+
+<script src="js/libs.min.js"></script>
+<script src="libs/aos/aos.js"></script>
+<script src="libs/stellar/jquery.stellar.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

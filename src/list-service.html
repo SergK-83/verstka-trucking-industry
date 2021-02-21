@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Title</title>
+
+    <link rel="stylesheet" href="fonts/fonts.css" type="text/css">
+
+    <link rel="stylesheet" href="css/libs.min.css" type="text/css">
+    <link rel="stylesheet" href="libs/slick/slick.css" type="text/css">
+    <link rel="stylesheet" href="libs/aos/aos.css" type="text/css">
+    <link rel="stylesheet" href="css/main.min.css" type="text/css">
+
+    <link rel="icon" href="img/favicons/favicon.ico">
+</head>
+
+<body data-spy="scroll" data-target="#mainHeaderTarget" data-offset="200">
+
+@@include('./html-blocks/_main-header.html')
+
+<main class="site-page">
+
+    <div class="site-page-banner" data-aos="fade">
+        <img class="site-page-banner__img" src="img/bg-03-1918x450.png" alt="">
+        <div class="site-page-banner__body-wrap">
+            <div class="container">
+                <div class="site-page-banner__body" data-aos="fade-up" data-aos-delay="200">
+                    <div class="site-page-banner__body-overlay" data-aos="fade" data-aos-delay="500"
+                         data-aos-easing="ease-in-sine" data-aos-duration="1000"></div>
+                    <div class="site-page-banner__body-inner-wrap">
+                        <div class="site-page-banner__title">Наши услуги
+                        </div>
+                        <p>
+                            <button class="site-page-banner__btn btn btn-custom" data-toggle="modal" data-target="#modalRequest">Оформить заявку</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Услуги</li>
+            </ol>
+        </nav>
+
+        <div class="site-page-header">
+            <h1 class="site-page-header__title">Наши услуги</h1>
+            <p class="site-page-header__caption">Качество гарантируем</p>
+        </div>
+
+        <button type="button" class="btn btn btn-custom mb-3 d-lg-none" data-toggle="modal" data-target="#modalRequest">Оформить заявку</button>
+
+        <div class="row">
+            <div class="col-md-7">
+                <div class="bg-light p-1 p-sm-2 mb-5">
+                    <div class="card-thumb card-thumb_service shadow-sm bg-white mb-4">
+                        <h3 class="card-thumb__titile">Негабаритные перевозки</h3>
+                        <div class="card-thumb__divider"></div>
+                        <p class="card-thumb__descr">Компания «Автобаланс» гарантирует быструю и надежную перевозку негабаритных грузов по России по выгодным ценам!</p>
+                        <p class="fs-14"><a href="service.html" class="card-thumb__more-details">Подробнее...</a></p>
+                        <button type="button" class="btn btn btn-custom-inverse mb-3" data-toggle="modal" data-target="#modalRequest">Получить консультацию</button>
+                    </div>
+                    <div class="card-thumb card-thumb_service shadow-sm bg-white mb-4">
+                        <h3 class="card-thumb__titile">Негабаритные перевозки</h3>
+                        <div class="card-thumb__divider"></div>
+                        <p class="card-thumb__descr">Компания «Автобаланс» гарантирует быструю и надежную перевозку негабаритных грузов по России по выгодным ценам!</p>
+                        <p class="fs-14"><a href="service.html" class="card-thumb__more-details">Подробнее...</a></p>
+                        <button type="button" class="btn btn btn-custom-inverse mb-3" data-toggle="modal" data-target="#modalRequest">Получить консультацию</button>
+                    </div>
+                    <div class="card-thumb card-thumb_service shadow-sm bg-white mb-4">
+                        <h3 class="card-thumb__titile">Негабаритные перевозки</h3>
+                        <div class="card-thumb__divider"></div>
+                        <p class="card-thumb__descr">Компания «Автобаланс» гарантирует быструю и надежную перевозку негабаритных грузов по России по выгодным ценам!</p>
+                        <p class="fs-14"><a href="service.html" class="card-thumb__more-details">Подробнее...</a></p>
+                        <button type="button" class="btn btn btn-custom-inverse mb-3" data-toggle="modal" data-target="#modalRequest">Получить консультацию</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 pl-lg-5">
+                <div class="mb-5">
+                    @@include('./html-blocks/_form-request.html')
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+@@include('./html-blocks/_main-footer.html')
+
+@@include('./html-blocks/_modal-request.html')
+
+<!-- scroll up -->
+@@include('./html-blocks/_scrollup.html')
+
+<script src="js/libs.min.js"></script>
+<script src="libs/aos/aos.js"></script>
+<script src="libs/stellar/jquery.stellar.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

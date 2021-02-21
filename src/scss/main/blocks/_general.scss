@@ -1,0 +1,462 @@
+/*
+====================================
+  general
+====================================
+*/
+
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+  height: 100%;
+  background: #fff;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: #4d4d4d;
+}
+
+body.dragging, body.dragging * {
+  cursor: move !important;
+}
+
+$orange: #f16821;
+$danger: #ec4c4c;
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-dott {
+  background: url(../img/dott.png)repeat 0 0;
+  background-size: 2px;
+}
+
+.bg-gray {
+  background-color: #f6f6f6 !important;
+}
+
+.bg-light-gray {
+  background-color: #fcfcfc !important;
+}
+
+.bg-dark-gray {
+  background-color: #ccc !important;
+}
+
+.bg-white {
+  background-color: #fff !important;
+}
+
+.bg-blue {
+  background-color: #9abef5 !important;
+}
+
+.bg-black {
+  background-color: #19212d !important;
+}
+
+.no-border {
+  border: none !important;
+}
+
+.border {
+  border: 1px solid #ddd;
+}
+
+.border-t {
+  border-top: 1px solid #ddd;
+}
+
+.border-b {
+  border-bottom: 1px solid #ddd;
+}
+
+.border-b-dashed {
+  border-bottom: 1px dashed #ddd;
+}
+
+a {
+  transition: .3s all ease;
+}
+
+a:hover, a:focus, a:active {
+  text-decoration: none;
+}
+
+a.link-underline {
+  text-decoration: underline;
+}
+
+a.link-underline:hover {
+  text-decoration: none;
+}
+
+a, a:focus {
+  color: $orange;
+}
+
+a:hover {
+  color: #c83600;
+}
+
+*,:active:focus,:focus {
+  outline: none!important
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul.list-divided > li + li {
+  border-top: 1px solid #eee;
+}
+
+.text-orange {
+  color: $orange;
+}
+
+.text-green {
+  color: #56a957;
+}
+
+.text-danger {
+  color: $danger;
+}
+
+.fw-300 {
+  font-weight: 300 !important;
+}
+
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.fs-9 {
+  font-size: 9px !important;
+}
+
+.fs-10 {
+  font-size: 10px !important;
+}
+
+.fs-11 {
+  font-size: 11px !important;
+}
+
+.fs-12 {
+  font-size: 12px !important;
+}
+
+.fs-13 {
+  font-size: 13px !important;
+}
+
+.fs-14 {
+  font-size: 14px !important;
+}
+
+.fs-15 {
+  font-size: 15px !important;
+}
+
+.fs-16 {
+  font-size: 16px !important;
+}
+
+.fs-18 {
+  font-size: 18px !important;
+}
+
+.fs-19 {
+  font-size: 19px !important;
+}
+
+
+
+hr {
+  border-top: 1px solid #ddd;
+}
+
+.hr-dashed {
+  border-top: 1px dashed #ddd;
+}
+
+.hr-bw-2 {
+  border-width: 2px;
+}
+
+button {
+  box-shadow: none !important;
+}
+
+.btn {
+  border-radius: 2px;
+  letter-spacing: 1px;
+  font-size: .8rem;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn-group-sm>.btn, .btn-sm {
+  font-size: .7rem;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+  font-size: 1rem;
+}
+
+.btn-custom {
+  color: #fff;
+  background-color: $orange;
+  border-color: $orange;
+}
+
+.btn-custom.active, .btn-custom:active, .btn-custom:hover, .btn-custom:focus, .btn-custom.active:hover, .btn-custom:active.focus, .btn-custom:active:focus, .btn-custom:active:hover, .open>.btn-custom.dropdown-toggle, .open>.btn-custom.dropdown-toggle.focus, .open>.btn-custom.dropdown-toggle:focus, .open>.btn-custom.dropdown-toggle:hover {
+  color: #fff;
+  border-color: #e55b29;
+  background-color: #e55b29;
+}
+
+.btn-custom:not(:disabled):not(.disabled).active, .btn-custom:not(:disabled):not(.disabled):active, .show>.btn-custom.dropdown-toggle {
+  color: #fff;
+  background-color: #d2500d;
+  border-color: #c64c0c;
+}
+
+.btn-custom.focus, .btn-custom:focus, .btn-custom:hover {
+  color: #fff;
+}
+
+.btn-custom-inverse {
+  background-color: transparent;
+  border-color: $orange;
+  color: $orange;
+}
+
+.btn-custom-inverse:focus {
+  color: $orange;
+}
+
+.btn-custom-inverse.text-black {
+  color: #000;
+}
+
+.btn-custom-inverse.text-muted {
+  color: #8c8c8c;
+}
+
+.btn-custom-inverse:hover {
+  background-color: $orange;
+  color: #fff;
+}
+
+.btn-white-inverse {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
+.btn-white-inverse:hover, .btn-white-inverse:focus:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.btn-white-inverse:focus {
+  color: #fff;
+}
+
+.icon-required {
+  vertical-align: text-top;
+  line-height: 1;
+  font-size: 15px;
+  color: #a94442;
+  font-weight: bold;
+}
+
+.icon-required:after {
+  content: '*';
+}
+
+.block-sticky {
+  position: sticky;
+  top: 10px;
+  z-index: 5;
+}
+
+.blockquote {
+  padding: 10px 20px;
+  border-left: 4px solid #f1f5f7;
+}
+
+/*
+====================================
+  dropdown
+====================================
+*/
+
+.dropdown-menu {
+  font-size: 13px;
+  line-height: 1.5;
+  border-radius: 0;
+}
+
+/*
+====================================
+  page-section
+====================================
+*/
+
+.page-section {
+  position: relative;
+  padding: 80px 0;
+}
+
+.page-section__header {
+  position: relative;
+  padding-bottom: 5px;
+  margin-bottom: 55px;
+}
+
+.page-section__header-title {
+  color: $orange;
+  text-transform: uppercase;
+  font-weight: 700 !important;
+  font-size: 32px;
+}
+
+.page-section__header-caption {
+  color: #a8a8a8;
+  letter-spacing: 1px;
+  font-size: 17px;
+  line-height: 1.3;
+}
+
+.page-section__header:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  width: 80px;
+  height: 3px;
+  background: #f16821;
+}
+
+.page-section__header.text-center:after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.page-section_feedbacks {
+  background: url(../img/trucks.jpg) center;
+  background-size: cover;
+
+  .page-section__header-title {
+    font-weight: 500 !important;
+  }
+}
+
+.overlay-bg {
+  background-color: #000;
+  opacity: .7;
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+/*
+====================================
+  page-title
+====================================
+*/
+
+.page-title {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #bfbfbf;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+/*
+====================================
+  animation
+====================================
+*/
+
+.animation-scale-hover {
+  transition: transform .2s ease-in-out;
+  cursor: pointer;
+}
+
+.animation-scale-hover:hover {
+  transform: scale(1.1);
+  transition: transform .2s ease-in-out;
+}
+
+.animation-opacity-hover {
+  transition: opacity .2s ease-in-out;
+  opacity: 1;
+}
+
+.animation-opacity-hover:hover {
+  opacity: .8;
+  transition: opacity .2s ease-in-out;
+}
+
+/*
+====================================
+  card
+====================================
+*/
+
+.card {
+  position: relative;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0,0,0,.08);
+}
+
+.card-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  font-weight: 500;
+  border: 2px solid #bbb;
+  line-height: 1;
+  border-radius: 4px;
+}
+
+.card-text {
+  line-height: 1.3;
+  font-size: 15px;
+}
+
+.card-status {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  color: #ccc;
+}
